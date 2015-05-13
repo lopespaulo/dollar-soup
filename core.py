@@ -47,5 +47,8 @@ def clean_data(dados):
             print("Error: {}".format(error))
     mariadb_connection.commit()
 
+
+
 url = 'https://www3.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do'
 clean_data(get_html(url))
+
